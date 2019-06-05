@@ -1,0 +1,139 @@
+div.wrap-row {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.expertise-blocks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 41.5rem;
+  height: 41.5rem;
+}
+
+.x-block {
+  display: block;
+  cursor: pointer;
+  width: 18.75rem;
+  height: 18.75rem;
+  transition: transform 0.3s ease-out, opacity 0.2s linear;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #999;
+  color: white;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.block {
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 2rem 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.block img {
+  width: 160px;
+}
+#xp_wrapper {
+  display: block;
+  width: 41.5rem;
+  height: 41.5rem;
+  margin: 4rem auto;
+  position: relative;
+}
+
+#xp_grid {
+  width: 41.5rem;
+  height: 41.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  perspective: 664px;
+}
+
+#xp_grid .xp-grid-square {
+  display: block;
+  width: 134px;
+  height: 134px;
+  position: relative;
+  transition: transform 0.3s ease-out, opacity 0.2s linear, background-color 0.2s linear;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-origin: 50% 50%;
+  background-color: #e3e3e3;
+}
+
+.xp-loader,
+#xp_grid .xp-grid-square .xp-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+.data-content {
+  padding: 12px;
+  text-align: center;
+}
+.data-content img {
+  width: 90px;
+}
+#xp_close {
+  background-color: #e3e3e3;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 15px;
+  position: absolute;
+  top: 16px;
+  right: -14px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
